@@ -35,4 +35,22 @@ func main() {
 
 	array2[1] = "Posicao Alterada"
 	fmt.Println(slice2)
+
+	// Arrays Internos Entender melhor sobre a função Make
+	fmt.Println("----------")
+	slice3 := make([]float32, 10, 15)
+	fmt.Println(slice3)
+	
+	slice3 = append(slice3, 5)
+	slice3 = append(slice3, 6)
+	
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // length
+	fmt.Println(cap(slice3)) // capacidade
+
+	slice4 := make([]float32, 5)
+	fmt.Println(slice4)
+	slice4 = append(slice4, 10)
+	fmt.Println(len(slice4))
+	fmt.Println(cap(slice4))
 }
